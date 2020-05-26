@@ -57,7 +57,7 @@ function! s:Couch(keys, visual) " {{{1
   " avoid wrapscan, and mark our prior location.
   " search() is subject to ignorecase/smartcase, so we just have to hope
   " our user is taking that into account.
-  let l:flags = "Wse"
+  let l:flags = "Ws"
   if a:keys[0] == '[' || a:keys == '{'
     " If we're searching backwards:
     let l:flags .= "b"

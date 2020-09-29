@@ -49,8 +49,7 @@ function! s:Couch(keys, visual) " {{{1
       let l:re = l:parts[1]
     endif
   else
-    " Not a 2-part regexp.
-    let l:re = l:opt
+    " Not a 2-part regexp. Do nothing.
   endif
 
   " Finally, prepare to call search(). Use flags to set search direction,

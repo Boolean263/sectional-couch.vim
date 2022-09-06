@@ -4,10 +4,10 @@
 "
 " Inspired by https://learnvimscriptthehardway.stevelosh.com/chapters/51.html
 
-if exists("g:loaded_sectional_couch") || &cp
+if exists("g:sectional_couch") || &cp
   finish
 endif
-let g:loaded_sectional_couch = 1
+let g:sectional_couch = "0.0.1"
 
 function! s:Couch(keys, visual) " {{{1
   if a:visual
